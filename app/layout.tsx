@@ -9,12 +9,12 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.eldorsattarov.uz"),
-  title: "Eldor Sattarov — Senior Frontend Engineer (React/Next.js) · Full-stack",
+  title: "Eldor Sattarov — Middle+ Frontend Engineer (React/Next.js) · Full-stack",
   description:
-    "Senior Frontend Engineer from Tashkent: React, Next.js, TypeScript, plus backend. Interfaces for aviation, banking and security systems. Open to work.",
+    "Middle+ Frontend Engineer from Tashkent: React, Next.js, TypeScript, plus backend. Interfaces for aviation, banking and security systems. Open to work.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Eldor Sattarov — Senior Frontend Engineer (React/Next.js)",
+    title: "Eldor Sattarov — Middle+ Frontend Engineer (React/Next.js)",
     description: "React · Next.js · TypeScript · Full-stack — Tashkent, Uzbekistan. Open to work.",
     url: "/",
     siteName: "Eldor Sattarov",

@@ -47,6 +47,18 @@ function StackCard({
             {title}
           </h3>
           <p className="max-w-[460px] text-base leading-relaxed text-mute">{info.desc}</p>
+          <dl className="flex max-w-[480px] flex-col gap-2.5 border-t border-line pt-4 text-[14px] leading-relaxed">
+            <div className="flex gap-3">
+              <dt className="w-[78px] shrink-0 pt-0.5 font-mono text-[10.5px] tracking-[0.08em] text-accent">{t.roleLabel}</dt>
+              <dd className="text-soft">{t.projRole}</dd>
+            </div>
+            {info.result && (
+              <div className="flex gap-3">
+                <dt className="w-[78px] shrink-0 pt-0.5 font-mono text-[10.5px] tracking-[0.08em] text-accent">{t.resultLabel}</dt>
+                <dd className="text-soft">{info.result}</dd>
+              </div>
+            )}
+          </dl>
           <div className="flex flex-wrap gap-2">
             {p.tech.map((x) => (
               <span key={x} className="rounded-lg border border-[rgba(237,237,234,0.16)] px-3 py-1.5 font-mono text-xs">

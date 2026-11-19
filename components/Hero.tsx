@@ -150,12 +150,12 @@ export function Hero() {
           >
             <span className="inline-flex items-center gap-3 rounded-full border border-line bg-ink/70 px-4 py-2 font-mono text-[10px] font-normal tracking-[0.3em] text-soft backdrop-blur-md sm:gap-3.5 sm:text-xs">
               <span className="h-px w-5 sm:w-10" style={{ background: "var(--accent)" }} />
-              SENIOR FRONTEND ENGINEER
+              MIDDLE+ FRONTEND ENGINEER
               <span className="h-px w-5 sm:w-10" style={{ background: "var(--accent)" }} />
             </span>
           </motion.span>
         </div>
-        <h1 className="sr-only">Eldor Sattarov — Senior Frontend Engineer (React/Next.js) · Full-stack</h1>
+        <h1 className="sr-only">Eldor Sattarov — Middle+ Frontend Engineer (React/Next.js) · Full-stack</h1>
 
         {/* bottom row */}
         <div className="absolute inset-x-0 bottom-0 z-[4] flex flex-wrap items-end justify-between gap-5 p-[22px] sm:p-[26px]">

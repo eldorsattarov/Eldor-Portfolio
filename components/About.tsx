@@ -129,7 +129,7 @@ export function About() {
           </div>
           <pre className="overflow-x-auto px-6 py-5 font-mono text-[13.5px] leading-[1.8] text-soft">
             <span className="text-[#8FB8FF]">const</span> eldor = {"{"}
-            {"\n  "}role: <span className="text-accent">&quot;Senior Frontend Engineer&quot;</span>,
+            {"\n  "}role: <span className="text-accent">&quot;Middle+ Frontend Engineer&quot;</span>,
             {"\n  "}also: <span className="text-accent">&quot;Full-stack&quot;</span>,
             {"\n  "}stack: [<span className="text-accent">&quot;React&quot;</span>, <span className="text-accent">&quot;Next.js&quot;</span>, <span className="text-accent">&quot;NestJS&quot;</span>, <span className="text-accent">&quot;PostgreSQL&quot;</span>],
             {"\n  "}experience: <span className="text-amber">6</span>,
