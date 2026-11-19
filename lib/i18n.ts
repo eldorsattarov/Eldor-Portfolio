@@ -5,7 +5,7 @@ type Pair = [title: string, desc: string];
 type JourneyItem = { year: string; date: string; title: string; place: string; desc: string };
 
 export type Dict = {
-  role: string; openToWork: string; cv: string; navHome: string; navAbout: string; navSkills: string; navWork: string; navContact: string;
+  role: string; openToWork: string; cv: string; cvHref: string; navHome: string; navAbout: string; navSkills: string; navWork: string; navContact: string;
   city: string; expShort: string; badge: string; heroLead: string; ctaWork: string;
   aboutTitle: string; about1: string; about2: string;
   expLabel: string; expSub: string; clockLabel: string;
@@ -23,7 +23,7 @@ export type ProjectKey = "aero" | "cbu" | "gps" | "credit" | "face" | "bio";
 
 export const dict: Record<Lang, Dict> = {
   uz: {
-    role: "Middle+ Frontend Engineer", openToWork: "Yangi takliflarga ochiqman", cv: "CV yuklab olish",
+    role: "Middle+ Frontend Engineer", openToWork: "Yangi takliflarga ochiqman", cv: "CV yuklab olish", cvHref: "/cv/Eldor-Sattarov-CV-UZ.pdf",
     navHome: "Bosh sahifa", navAbout: "Men haqimda", navSkills: "Ko'nikmalar", navWork: "Loyihalar", navContact: "Aloqa",
     city: "Toshkent", expShort: "yil tajriba", badge: "LOYIHALARNI KO'RISH · PASTGA · ",
     heroLead: "Murakkab tizimlar uchun tez, tushunarli va chiroyli interfeyslar yarataman — aeroportlardan Markaziy Bankgacha.",
@@ -50,8 +50,8 @@ export const dict: Record<Lang, Dict> = {
     journey: [
       { year: "2018", date: "2018 — 2022", title: "Bakalavr, Software Engineering", place: "Toshkent axborot texnologiyalari universiteti", desc: "Dasturiy injiniring fakulteti." },
       { year: "2020", date: "2020 — 2022", title: "Frontend developer", place: "Napa Automotive MChJ", desc: "React, interfeys arxitekturasi, dashboardlar va jadvallar." },
-      { year: "2022", date: "2022.03 — 2026.11", title: "SoftData MChJ", place: "Frontend → Full-stack developer", desc: "Aviatsiya, bank va xavfsizlik sohalari uchun korporativ tizimlar." },
-      { year: "Bugun", date: "OPEN TO WORK", title: "Middle+ Frontend Engineer · Full-stack", place: "Yangi takliflarga ochiqman", desc: "React / Next.js, TypeScript va backend bilan to'liq mahsulotlar." },
+      { year: "2022", date: "2022.03 — 2026.11", title: "SoftData MChJ", place: "Frontend developer", desc: "Aviatsiya, bank va xavfsizlik sohalari uchun korporativ tizimlar." },
+      { year: "Bugun", date: "OPEN TO WORK", title: "Middle+ Frontend Engineer", place: "Yangi takliflarga ochiqman", desc: "React / Next.js, TypeScript va backend bilan to'liq mahsulotlar." },
     ],
     talk: ["Aloqa", "Contact", "Контакты"],
     contactTitle: "Yangi loyiha yoki hamkorlik bo'yicha — bemalol yozing",
@@ -68,7 +68,7 @@ export const dict: Record<Lang, Dict> = {
     },
   },
   ru: {
-    role: "Middle+ Frontend Engineer", openToWork: "Открыт к предложениям", cv: "Скачать CV",
+    role: "Middle+ Frontend Engineer", openToWork: "Открыт к предложениям", cv: "Скачать CV", cvHref: "/cv/Eldor-Sattarov-CV.pdf",
     navHome: "Главная", navAbout: "Обо мне", navSkills: "Навыки", navWork: "Проекты", navContact: "Контакты",
     city: "Ташкент", expShort: "лет опыта", badge: "СМОТРЕТЬ ПРОЕКТЫ · ВНИЗ · ",
     heroLead: "Создаю быстрые, понятные и красивые интерфейсы для сложных систем — от аэропортов до Центрального банка.",
@@ -95,8 +95,8 @@ export const dict: Record<Lang, Dict> = {
     journey: [
       { year: "2018", date: "2018 — 2022", title: "Бакалавр, Software Engineering", place: "Ташкентский университет информационных технологий", desc: "Факультет программного инжиниринга." },
       { year: "2020", date: "2020 — 2022", title: "Frontend-разработчик", place: "Napa Automotive", desc: "React, архитектура интерфейсов, дашборды и таблицы." },
-      { year: "2022", date: "2022.03 — 2026.11", title: "SoftData", place: "Frontend → Full-stack разработчик", desc: "Корпоративные системы для авиации, банков и безопасности." },
-      { year: "Сейчас", date: "OPEN TO WORK", title: "Middle+ Frontend Engineer · Full-stack", place: "Открыт к предложениям", desc: "React / Next.js, TypeScript и backend — продукты целиком." },
+      { year: "2022", date: "2022.03 — 2026.11", title: "SoftData", place: "Frontend-разработчик", desc: "Корпоративные системы для авиации, банков и безопасности." },
+      { year: "Сейчас", date: "OPEN TO WORK", title: "Middle+ Frontend Engineer", place: "Открыт к предложениям", desc: "React / Next.js, TypeScript и backend — продукты целиком." },
     ],
     talk: ["Контакты", "Aloqa", "Contact"],
     contactTitle: "По новому проекту или сотрудничеству — пишите",
@@ -113,7 +113,7 @@ export const dict: Record<Lang, Dict> = {
     },
   },
   en: {
-    role: "Middle+ Frontend Engineer", openToWork: "Open to work", cv: "Download CV",
+    role: "Middle+ Frontend Engineer", openToWork: "Open to work", cv: "Download CV", cvHref: "/cv/Eldor-Sattarov-CV.pdf",
     navHome: "Home", navAbout: "About", navSkills: "Skills", navWork: "Work", navContact: "Contact",
     city: "Tashkent", expShort: "years exp.", badge: "VIEW PROJECTS · SCROLL DOWN · ",
     heroLead: "I build fast, clear and beautiful interfaces for complex systems — from airports to the Central Bank.",
@@ -140,8 +140,8 @@ export const dict: Record<Lang, Dict> = {
     journey: [
       { year: "2018", date: "2018 — 2022", title: "BSc, Software Engineering", place: "Tashkent University of Information Technologies", desc: "Faculty of Software Engineering." },
       { year: "2020", date: "2020 — 2022", title: "Frontend developer", place: "Napa Automotive LLC", desc: "React, interface architecture, dashboards and data tables." },
-      { year: "2022", date: "2022.03 — 2026.11", title: "SoftData LLC", place: "Frontend → Full-stack developer", desc: "Enterprise systems for aviation, banking and security." },
-      { year: "Now", date: "OPEN TO WORK", title: "Middle+ Frontend Engineer · Full-stack", place: "Open to new opportunities", desc: "End-to-end products with React / Next.js, TypeScript and backend." },
+      { year: "2022", date: "2022.03 — 2026.11", title: "SoftData LLC", place: "Frontend developer", desc: "Enterprise systems for aviation, banking and security." },
+      { year: "Now", date: "OPEN TO WORK", title: "Middle+ Frontend Engineer", place: "Open to new opportunities", desc: "End-to-end products with React / Next.js, TypeScript and backend." },
     ],
     talk: ["Contact", "Aloqa", "Контакты"],
     contactTitle: "For new projects or collaboration — just write",

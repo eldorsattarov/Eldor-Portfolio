@@ -57,7 +57,7 @@ export function About() {
             <p>{t.about2}</p>
             <div className="flex flex-wrap gap-2 pt-1.5">
               <a
-                href="/cv/Eldor-Sattarov-CV.pdf"
+                href={t.cvHref}
                 download
                 className="inline-flex min-h-10 items-center gap-2 rounded-full bg-accent px-4 text-[13px] font-semibold text-ink transition hover:-translate-y-0.5 hover:brightness-110"
               >
@@ -130,7 +130,7 @@ export function About() {
           <pre className="overflow-x-auto px-6 py-5 font-mono text-[13.5px] leading-[1.8] text-soft">
             <span className="text-[#8FB8FF]">const</span> eldor = {"{"}
             {"\n  "}role: <span className="text-accent">&quot;Middle+ Frontend Engineer&quot;</span>,
-            {"\n  "}also: <span className="text-accent">&quot;Full-stack&quot;</span>,
+            {"\n  "}focus: <span className="text-accent">&quot;React / Next.js&quot;</span>,
             {"\n  "}stack: [<span className="text-accent">&quot;React&quot;</span>, <span className="text-accent">&quot;Next.js&quot;</span>, <span className="text-accent">&quot;NestJS&quot;</span>, <span className="text-accent">&quot;PostgreSQL&quot;</span>],
             {"\n  "}experience: <span className="text-amber">6</span>,
             {"\n  "}openToWork: <span className="text-[#8FB8FF]">true</span>,

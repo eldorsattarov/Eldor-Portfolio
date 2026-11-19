@@ -155,7 +155,7 @@ export function Hero() {
             </span>
           </motion.span>
         </div>
-        <h1 className="sr-only">Eldor Sattarov — Middle+ Frontend Engineer (React/Next.js) · Full-stack</h1>
+        <h1 className="sr-only">Eldor Sattarov — Middle+ Frontend Engineer (React/Next.js)</h1>
 
         {/* bottom row */}
         <div className="absolute inset-x-0 bottom-0 z-[4] flex flex-wrap items-end justify-between gap-5 p-[22px] sm:p-[26px]">
@@ -167,7 +167,7 @@ export function Hero() {
           >
             <span className="flex flex-col">
               <span className="font-display text-xl font-semibold tracking-[-0.02em] text-accent">{t.role}</span>
-              <span className="font-mono text-[11px] tracking-[0.08em] text-dim">REACT / NEXT.JS · FULL-STACK</span>
+              <span className="font-mono text-[11px] tracking-[0.08em] text-dim">REACT / NEXT.JS · TYPESCRIPT</span>
             </span>
             <p className="text-[15px] leading-relaxed text-soft">{t.heroLead}</p>
           </motion.div>
@@ -179,7 +179,7 @@ export function Hero() {
             className="ml-auto flex items-center gap-3.5"
           >
             <a
-              href="/cv/Eldor-Sattarov-CV.pdf"
+              href={t.cvHref}
               download
               className="hidden min-h-[54px] items-center gap-2 rounded-full border border-line bg-ink/60 px-5 text-sm font-semibold backdrop-blur-md transition hover:border-transparent hover:bg-accent hover:text-ink lg:inline-flex"
             >
