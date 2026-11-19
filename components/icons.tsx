@@ -51,4 +51,8 @@ export const IconX = ({ size = 12, className, strokeWidth = 3 }: P) => (
   <svg {...base(size, strokeWidth, className)}><path d="M6 6l12 12M18 6 6 18" /></svg>
 );
 
+export const IconDownload = ({ size = 18, className, strokeWidth = 2 }: P) => (
+  <svg {...base(size, strokeWidth, className)}><path d="M12 4v11" /><path d="m7 10 5 5 5-5" /><path d="M5 20h14" /></svg>
+);
+
 export const SOCIAL_ICONS = { TG: IconTelegram, "@": IconMail, IN: IconLinkedin, GH: IconGithub } as const;

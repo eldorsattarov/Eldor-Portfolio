@@ -5,7 +5,7 @@ type Pair = [title: string, desc: string];
 type JourneyItem = { year: string; date: string; title: string; place: string; desc: string };
 
 export type Dict = {
-  navHome: string; navAbout: string; navSkills: string; navWork: string; navContact: string;
+  role: string; openToWork: string; cv: string; navHome: string; navAbout: string; navSkills: string; navWork: string; navContact: string;
   city: string; expShort: string; badge: string; heroLead: string; ctaWork: string;
   aboutTitle: string; about1: string; about2: string;
   expLabel: string; expSub: string; clockLabel: string;
@@ -22,13 +22,14 @@ export type ProjectKey = "aero" | "cbu" | "gps" | "credit" | "face" | "bio";
 
 export const dict: Record<Lang, Dict> = {
   uz: {
+    role: "Senior Frontend Engineer", openToWork: "Yangi takliflarga ochiqman", cv: "CV yuklab olish",
     navHome: "Bosh sahifa", navAbout: "Men haqimda", navSkills: "Ko'nikmalar", navWork: "Loyihalar", navContact: "Aloqa",
     city: "Toshkent", expShort: "yil tajriba", badge: "LOYIHALARNI KO'RISH · PASTGA · ",
     heroLead: "Murakkab tizimlar uchun tez, tushunarli va chiroyli interfeyslar yarataman — aeroportlardan Markaziy Bankgacha.",
     ctaWork: "Loyihalarni ko'rish",
     aboutTitle: "Interfeysdan serverga qadar — butun mahsulot ustida ishlayman.",
     about1: "2018–2022-yillarda Toshkent axborot texnologiyalari universitetining Dasturiy injiniring fakultetida «Software Engineering» mutaxassisligi bo'yicha tahsil olganman.",
-    about2: "Faoliyatimni frontend developer sifatida boshlaganman, bugun esa Full-stack developerman. 2022-yil martdan buyon SoftData MChJ jamoasida aviatsiya, bank va xavfsizlik sohalari uchun yirik tizimlar yaratib kelmoqdaman.",
+    about2: "Bugun men React/Next.js bo'yicha Senior Frontend Engineer'man va backend qismini ham yoza olaman. 2022-yil martdan 2026-yil noyabrgacha SoftData MChJ jamoasida aviatsiya, bank va xavfsizlik sohalari uchun yirik tizimlar yaratdim. Hozir yangi takliflarga ochiqman.",
     expLabel: "TAJRIBA", expSub: "yil kod, dizayn va mahsulot", clockLabel: "TOSHKENTDA HOZIR",
     eduLabel: "TA'LIM", eduName: "Toshkent axborot texnologiyalari universiteti",
     langLabel: "TILLAR", langSub: "O'zbek · Rus · Ingliz", stackLabel: "TEXNOLOGIYALAR",
@@ -47,9 +48,9 @@ export const dict: Record<Lang, Dict> = {
     journeyTitle: "Mening yo'lim",
     journey: [
       { year: "2018", date: "2018 — 2022", title: "Bakalavr, Software Engineering", place: "Toshkent axborot texnologiyalari universiteti", desc: "Dasturiy injiniring fakulteti." },
-      { year: "2020", date: "BOSHLANISH", title: "Frontend developer", place: "Ilk tijoriy loyihalar", desc: "React, interfeys arxitekturasi, dashboardlar va jadvallar." },
-      { year: "2022", date: "MART", title: "SoftData MChJ", place: "Frontend developer", desc: "Aviatsiya, bank va xavfsizlik sohalari uchun korporativ tizimlar." },
-      { year: "Bugun", date: "HOZIR", title: "Full-stack developer", place: "SoftData MChJ", desc: "Next.js, NestJS, TypeScript va AI vositalari bilan to'liq mahsulotlar." },
+      { year: "2020", date: "2020 — 2022", title: "Frontend developer", place: "Napa Automotive MChJ", desc: "React, interfeys arxitekturasi, dashboardlar va jadvallar." },
+      { year: "2022", date: "2022.03 — 2026.11", title: "SoftData MChJ", place: "Frontend → Full-stack developer", desc: "Aviatsiya, bank va xavfsizlik sohalari uchun korporativ tizimlar." },
+      { year: "Bugun", date: "OPEN TO WORK", title: "Senior Frontend Engineer · Full-stack", place: "Yangi takliflarga ochiqman", desc: "React / Next.js, TypeScript va backend bilan to'liq mahsulotlar." },
     ],
     talk: ["Aloqa", "Contact", "Контакты"],
     contactTitle: "Yangi loyiha yoki hamkorlik bo'yicha — bemalol yozing",
@@ -64,13 +65,14 @@ export const dict: Record<Lang, Dict> = {
     },
   },
   ru: {
+    role: "Senior Frontend Engineer", openToWork: "Открыт к предложениям", cv: "Скачать CV",
     navHome: "Главная", navAbout: "Обо мне", navSkills: "Навыки", navWork: "Проекты", navContact: "Контакты",
     city: "Ташкент", expShort: "лет опыта", badge: "СМОТРЕТЬ ПРОЕКТЫ · ВНИЗ · ",
     heroLead: "Создаю быстрые, понятные и красивые интерфейсы для сложных систем — от аэропортов до Центрального банка.",
     ctaWork: "Смотреть проекты",
     aboutTitle: "От интерфейса до сервера — работаю над продуктом целиком.",
     about1: "В 2018–2022 годах учился в Ташкентском университете информационных технологий на факультете программного инжиниринга по специальности «Software Engineering».",
-    about2: "Начинал как frontend-разработчик, сегодня — Full-stack разработчик. С марта 2022 года в команде SoftData создаю крупные системы для авиации, банковской сферы и безопасности.",
+    about2: "Сегодня я Senior Frontend Engineer (React/Next.js) и умею писать backend. С марта 2022 по ноябрь 2026 года в команде SoftData создавал крупные системы для авиации, банковской сферы и безопасности. Сейчас открыт к новым предложениям.",
     expLabel: "ОПЫТ", expSub: "лет в коде, дизайне и продукте", clockLabel: "СЕЙЧАС В ТАШКЕНТЕ",
     eduLabel: "ОБРАЗОВАНИЕ", eduName: "Ташкентский университет информационных технологий",
     langLabel: "ЯЗЫКИ", langSub: "Узбекский · Русский · Английский", stackLabel: "ТЕХНОЛОГИИ",
@@ -89,9 +91,9 @@ export const dict: Record<Lang, Dict> = {
     journeyTitle: "Мой путь",
     journey: [
       { year: "2018", date: "2018 — 2022", title: "Бакалавр, Software Engineering", place: "Ташкентский университет информационных технологий", desc: "Факультет программного инжиниринга." },
-      { year: "2020", date: "СТАРТ", title: "Frontend-разработчик", place: "Первые коммерческие проекты", desc: "React, архитектура интерфейсов, дашборды и таблицы." },
-      { year: "2022", date: "МАРТ", title: "SoftData", place: "Frontend-разработчик", desc: "Корпоративные системы для авиации, банков и безопасности." },
-      { year: "Сейчас", date: "СЕГОДНЯ", title: "Full-stack разработчик", place: "SoftData", desc: "Продукты целиком: Next.js, NestJS, TypeScript и AI-инструменты." },
+      { year: "2020", date: "2020 — 2022", title: "Frontend-разработчик", place: "Napa Automotive", desc: "React, архитектура интерфейсов, дашборды и таблицы." },
+      { year: "2022", date: "2022.03 — 2026.11", title: "SoftData", place: "Frontend → Full-stack разработчик", desc: "Корпоративные системы для авиации, банков и безопасности." },
+      { year: "Сейчас", date: "OPEN TO WORK", title: "Senior Frontend Engineer · Full-stack", place: "Открыт к предложениям", desc: "React / Next.js, TypeScript и backend — продукты целиком." },
     ],
     talk: ["Контакты", "Aloqa", "Contact"],
     contactTitle: "По новому проекту или сотрудничеству — пишите",
@@ -106,13 +108,14 @@ export const dict: Record<Lang, Dict> = {
     },
   },
   en: {
+    role: "Senior Frontend Engineer", openToWork: "Open to work", cv: "Download CV",
     navHome: "Home", navAbout: "About", navSkills: "Skills", navWork: "Work", navContact: "Contact",
     city: "Tashkent", expShort: "years exp.", badge: "VIEW PROJECTS · SCROLL DOWN · ",
     heroLead: "I build fast, clear and beautiful interfaces for complex systems — from airports to the Central Bank.",
     ctaWork: "View projects",
     aboutTitle: "From interface to server — I work on the whole product.",
     about1: "From 2018 to 2022 I studied at Tashkent University of Information Technologies, Faculty of Software Engineering, majoring in Software Engineering.",
-    about2: "I started as a frontend developer and today I'm a full-stack developer. Since March 2022 I've been at SoftData LLC, building large-scale systems for aviation, banking and security.",
+    about2: "Today I'm a Senior Frontend Engineer (React/Next.js) who can also build the backend. From March 2022 to November 2026 I worked at SoftData LLC, building large-scale systems for aviation, banking and security. I'm now open to new opportunities.",
     expLabel: "EXPERIENCE", expSub: "years of code, design and product", clockLabel: "NOW IN TASHKENT",
     eduLabel: "EDUCATION", eduName: "Tashkent University of Information Technologies",
     langLabel: "LANGUAGES", langSub: "Uzbek · Russian · English", stackLabel: "STACK",
@@ -131,9 +134,9 @@ export const dict: Record<Lang, Dict> = {
     journeyTitle: "My journey",
     journey: [
       { year: "2018", date: "2018 — 2022", title: "BSc, Software Engineering", place: "Tashkent University of Information Technologies", desc: "Faculty of Software Engineering." },
-      { year: "2020", date: "THE START", title: "Frontend developer", place: "First commercial projects", desc: "React, interface architecture, dashboards and data tables." },
-      { year: "2022", date: "MARCH", title: "SoftData LLC", place: "Frontend developer", desc: "Enterprise systems for aviation, banking and security." },
-      { year: "Now", date: "TODAY", title: "Full-stack developer", place: "SoftData LLC", desc: "End-to-end products with Next.js, NestJS, TypeScript and AI tools." },
+      { year: "2020", date: "2020 — 2022", title: "Frontend developer", place: "Napa Automotive LLC", desc: "React, interface architecture, dashboards and data tables." },
+      { year: "2022", date: "2022.03 — 2026.11", title: "SoftData LLC", place: "Frontend → Full-stack developer", desc: "Enterprise systems for aviation, banking and security." },
+      { year: "Now", date: "OPEN TO WORK", title: "Senior Frontend Engineer · Full-stack", place: "Open to new opportunities", desc: "End-to-end products with React / Next.js, TypeScript and backend." },
     ],
     talk: ["Contact", "Aloqa", "Контакты"],
     contactTitle: "For new projects or collaboration — just write",

@@ -6,7 +6,7 @@ import { CONTACTS } from "@/lib/data";
 import { useLang } from "./LangProvider";
 import { Reveal } from "./Reveal";
 import { Magnetic } from "./Magnetic";
-import { IconArrowUpRight, IconTelegram } from "./icons";
+import { IconArrowUpRight, IconDownload, IconTelegram } from "./icons";
 
 export function Contact() {
   const { t } = useLang();
@@ -75,6 +75,7 @@ export function Contact() {
             ))}
           </div>
 
+          <div className="flex flex-wrap items-center gap-3">
           <Magnetic>
             <a
               href="https://t.me/developer_ES"
@@ -86,6 +87,15 @@ export function Contact() {
               {t.writeTg}
             </a>
           </Magnetic>
+          <a
+            href="/cv/Eldor-Sattarov-CV.pdf"
+            download
+            className="inline-flex min-h-[54px] items-center gap-2.5 rounded-full border border-line px-7 text-[15px] font-semibold transition hover:border-transparent hover:bg-fg hover:text-ink"
+          >
+            <IconDownload />
+            {t.cv}
+          </a>
+          </div>
         </div>
 
         <footer className="relative z-[2] mt-[72px] flex flex-wrap justify-between gap-3 border-t border-[rgba(237,237,234,0.08)] bg-panel px-6 pt-6 pb-20 text-[13px] text-dim sm:px-10">

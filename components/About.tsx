@@ -6,7 +6,7 @@ import { CONTACTS, STACK_GROUPS } from "@/lib/data";
 import { useLang } from "./LangProvider";
 import { useTashkentClock } from "./useClock";
 import { SectionTitle } from "./SectionTitle";
-import { IconCap } from "./icons";
+import { IconCap, IconDownload } from "./icons";
 
 const tile =
   "rounded-[28px] border border-line bg-card transition-[border-color,transform] duration-500 hover:-translate-y-1 hover:border-[rgba(237,237,234,0.26)]";
@@ -46,7 +46,7 @@ export function About() {
             />
             <span className="flex flex-col">
               <span className="font-display text-[17px] font-semibold">Eldor Sattarov</span>
-              <span className="text-[13px] text-mute">Full-stack developer · SoftData</span>
+              <span className="text-[13px] text-mute">{t.role} · React / Next.js</span>
             </span>
           </div>
           <h3 className="font-display text-[clamp(28px,2.6vw,40px)] font-semibold leading-[1.08] tracking-[-0.03em]">
@@ -56,6 +56,14 @@ export function About() {
             <p>{t.about1}</p>
             <p>{t.about2}</p>
             <div className="flex flex-wrap gap-2 pt-1.5">
+              <a
+                href="/cv/Eldor-Sattarov-CV.pdf"
+                download
+                className="inline-flex min-h-10 items-center gap-2 rounded-full bg-accent px-4 text-[13px] font-semibold text-ink transition hover:-translate-y-0.5 hover:brightness-110"
+              >
+                <IconDownload size={15} />
+                {t.cv}
+              </a>
               {CONTACTS.map((c) => (
                 <a
                   key={c.label}
@@ -121,10 +129,11 @@ export function About() {
           </div>
           <pre className="overflow-x-auto px-6 py-5 font-mono text-[13.5px] leading-[1.8] text-soft">
             <span className="text-[#8FB8FF]">const</span> eldor = {"{"}
-            {"\n  "}role: <span className="text-accent">&quot;Full-stack developer&quot;</span>,
-            {"\n  "}company: <span className="text-accent">&quot;SoftData&quot;</span>,
+            {"\n  "}role: <span className="text-accent">&quot;Senior Frontend Engineer&quot;</span>,
+            {"\n  "}also: <span className="text-accent">&quot;Full-stack&quot;</span>,
             {"\n  "}stack: [<span className="text-accent">&quot;React&quot;</span>, <span className="text-accent">&quot;Next.js&quot;</span>, <span className="text-accent">&quot;NestJS&quot;</span>, <span className="text-accent">&quot;PostgreSQL&quot;</span>],
             {"\n  "}experience: <span className="text-amber">6</span>,
+            {"\n  "}openToWork: <span className="text-[#8FB8FF]">true</span>,
             {"\n"}{"};"}
             {"\n"}
             <span className="text-dim">// </span>

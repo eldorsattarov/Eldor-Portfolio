@@ -11,5 +11,5 @@ export function useTashkentClock() {
     const id = setInterval(tick, 15000);
     return () => clearInterval(id);
   }, []);
-  return time || "--:--";
+  return time || "UTC+5";
 }

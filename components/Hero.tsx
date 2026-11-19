@@ -8,7 +8,7 @@ import { useTashkentClock } from "./useClock";
 import { LangSwitch } from "./LangSwitch";
 import { SocialButtons } from "./SocialButtons";
 import { Magnetic } from "./Magnetic";
-import { IconArrowDown } from "./icons";
+import { IconArrowDown, IconDownload } from "./icons";
 
 const ease = [0.2, 0.8, 0.2, 1] as const;
 
@@ -91,9 +91,10 @@ export function Hero() {
             </span>
             <span className="hidden font-display text-base font-semibold md:inline">Eldor Sattarov</span>
           </a>
-          <div className="hidden items-center gap-2.5 rounded-full border border-line bg-card/70 px-4 py-2 text-[13px] text-mute md:inline-flex">
+          <div className="hidden items-center gap-2.5 rounded-full border px-4 py-2 text-[13px] text-accent md:inline-flex" style={{ borderColor: "var(--accent-line)", background: "var(--accent-soft)" }}>
             <span className="pulse-dot h-2 w-2 rounded-full bg-accent" />
-            {t.city} · {clock}
+            {t.openToWork}
+            <span className="text-mute">· {t.city} {clock}</span>
           </div>
           <div className="flex flex-wrap items-center gap-2.5">
             <div className="hidden sm:block">
@@ -149,12 +150,12 @@ export function Hero() {
           >
             <span className="inline-flex items-center gap-3 rounded-full border border-line bg-ink/70 px-4 py-2 font-mono text-[10px] font-normal tracking-[0.3em] text-soft backdrop-blur-md sm:gap-3.5 sm:text-xs">
               <span className="h-px w-5 sm:w-10" style={{ background: "var(--accent)" }} />
-              FULL-STACK DEVELOPER
+              SENIOR FRONTEND ENGINEER
               <span className="h-px w-5 sm:w-10" style={{ background: "var(--accent)" }} />
             </span>
           </motion.span>
         </div>
-        <h1 className="sr-only">Eldor Sattarov — Full-stack developer</h1>
+        <h1 className="sr-only">Eldor Sattarov — Senior Frontend Engineer (React/Next.js) · Full-stack</h1>
 
         {/* bottom row */}
         <div className="absolute inset-x-0 bottom-0 z-[4] flex flex-wrap items-end justify-between gap-5 p-[22px] sm:p-[26px]">
@@ -164,13 +165,9 @@ export function Hero() {
             transition={{ delay: 1.1, duration: 0.9, ease }}
             className="hidden max-w-[360px] flex-col gap-3 rounded-3xl border border-line bg-ink/60 px-[22px] py-5 backdrop-blur-[14px] sm:flex"
           >
-            <span className="inline-block h-[1.2em] overflow-hidden font-display text-xl font-semibold leading-[1.2em] tracking-[-0.02em] text-accent">
-              <span className="roles flex flex-col">
-                <span>Full-stack developer</span>
-                <span>Frontend engineer</span>
-                <span>UI engineer</span>
-                <span>Full-stack developer</span>
-              </span>
+            <span className="flex flex-col">
+              <span className="font-display text-xl font-semibold tracking-[-0.02em] text-accent">{t.role}</span>
+              <span className="font-mono text-[11px] tracking-[0.08em] text-dim">REACT / NEXT.JS · FULL-STACK</span>
             </span>
             <p className="text-[15px] leading-relaxed text-soft">{t.heroLead}</p>
           </motion.div>
@@ -181,6 +178,14 @@ export function Hero() {
             transition={{ delay: 1.25, duration: 0.9, ease }}
             className="ml-auto flex items-center gap-3.5"
           >
+            <a
+              href="/cv/Eldor-Sattarov-CV.pdf"
+              download
+              className="hidden min-h-[54px] items-center gap-2 rounded-full border border-line bg-ink/60 px-5 text-sm font-semibold backdrop-blur-md transition hover:border-transparent hover:bg-accent hover:text-ink lg:inline-flex"
+            >
+              <IconDownload />
+              {t.cv}
+            </a>
             <span className="float-y inline-flex flex-col rounded-[20px] bg-accent px-[18px] py-3.5 text-ink">
               <span className="font-display text-[30px] font-bold leading-none tracking-[-0.05em]">6+</span>
               <span className="text-xs font-semibold">{t.expShort}</span>

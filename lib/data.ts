@@ -9,16 +9,16 @@ export const CONTACTS = [
 
 export const STACK_GROUPS = [
   { label: "FRONTEND", items: ["React", "Next.js", "TypeScript", "JavaScript", "Redux", "Tailwind CSS", "Ant Design", "i18next"] },
-  { label: "BACKEND", items: ["Node.js", "NestJS", "Express.js", "PostgreSQL", "MongoDB", "Prisma", "REST API"] },
+  { label: "BACKEND", items: ["Node.js", "Express.js", "NestJS", "PostgreSQL", "REST API"] },
   { label: "MAPS · DATA", items: ["Google Maps API", "React Leaflet", "ApexCharts"] },
-  { label: "TOOLS", items: ["Docker", "Git", "Vite", "Claude AI"] },
+  { label: "TOOLS", items: ["Docker", "Git", "Vite", "AI-assisted development (Claude)"] },
 ];
 
 export const SERVICE_CHIPS = [
   ["React", "Next.js", "TypeScript", "Redux", "Tailwind CSS", "Ant Design", "i18next"],
   ["Google Maps API", "React Leaflet", "GPS tracking"],
   ["ApexCharts", "BI dashboards", "KPI"],
-  ["Node.js", "NestJS", "Express.js", "PostgreSQL", "MongoDB", "REST API", "Telegram Mini App", "Docker"],
+  ["Node.js", "Express.js", "NestJS", "PostgreSQL", "REST API", "Telegram Mini App", "Docker"],
 ];
 
 export const MARQUEE_1 = ["React", "Next.js", "TypeScript", "Node.js", "NestJS", "PostgreSQL", "Tailwind CSS", "Google Maps", "Telegram Mini App"];

@@ -8,16 +8,19 @@ import "./globals.css";
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "Eldor Sattarov — Full-stack developer",
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.eldorsattarov.uz"),
+  title: "Eldor Sattarov — Senior Frontend Engineer (React/Next.js) · Full-stack",
   description:
-    "Full-stack developer from Tashkent. Interfaces and products for aviation, banking and security systems — React, Next.js, NestJS, TypeScript.",
+    "Senior Frontend Engineer from Tashkent: React, Next.js, TypeScript, plus backend. Interfaces for aviation, banking and security systems. Open to work.",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Eldor Sattarov — Full-stack developer",
-    description: "React · Next.js · NestJS · TypeScript — Tashkent, Uzbekistan",
-    images: ["/images/eldor.jpg"],
+    title: "Eldor Sattarov — Senior Frontend Engineer (React/Next.js)",
+    description: "React · Next.js · TypeScript · Full-stack — Tashkent, Uzbekistan. Open to work.",
+    url: "/",
+    siteName: "Eldor Sattarov",
     type: "website",
   },
+  twitter: { card: "summary_large_image" },
 };
 
 export const viewport: Viewport = { themeColor: "#070a10" };
